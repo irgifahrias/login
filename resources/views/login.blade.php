@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Signin Template for Bootstrap</title>
+    <title>| Login |</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{URL('https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -21,8 +21,10 @@
     <form class="form-signin" method="POST" action="{{ route('login') }}">
     {{ csrf_field() }}
       <h1 class="h3 mb-3 font-weight-normal">Login {{config ('app.name') }}</h1>
+      <div>
       <label for="inputEmail" class="sr-only">Email address</label>
       <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+      </div>
       <label for="inputPassword" class="sr-only">Password</label>
       <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
       <div class="checkbox mb-3">
@@ -31,7 +33,7 @@
         </label>
       </div>
       <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
-      <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+      <p class="mt-5 mb-3 text-muted">&copy; 2018-2019</p>
     </form>
     
   </body>
